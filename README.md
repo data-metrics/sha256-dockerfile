@@ -15,6 +15,8 @@ To build this image, run:
 For example:
 
 ```
+  git clone https://github.com/data-metrics/sha256-dockerfile.git
+  cd sha256-dockerfile
   docker login
   docker build . -t quay.io/dailydreaming/sha256:stable-slim
   docker push quay.io/dailydreaming/sha256:stable-slim
