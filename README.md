@@ -5,6 +5,8 @@ Custom Dockerfile used for the sha256 workflow that includes a default file.
 To build this image, run:
 
 ```
+  git clone https://github.com/data-metrics/sha256-dockerfile.git
+  cd sha256-dockerfile
   docker login
   docker build . -t {domain}/{docker_username}/{image_name}:{image_tag}
   docker push {domain}/{docker_username}/{image_name}:{image_tag}
